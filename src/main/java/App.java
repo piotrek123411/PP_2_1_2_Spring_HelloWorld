@@ -17,15 +17,13 @@ public class App {
         Cat two = (Cat) context.getBean("Cat");
         System.out.println(two.getMeow());
 
-        System.out.println(one.hashCode());
-        System.out.println(two.hashCode());
 
-        if (tree.equals(leaf)) {
+        if (tree == leaf) {
             System.out.println("true");
         } else {
             System.out.println("false");
         }
-        if (one.equals(two)) {
+        if (one == two) {
             System.out.println("true");
         } else {
             System.out.println("false");
