@@ -11,11 +11,14 @@ public class App {
         HelloWorld leaf = (HelloWorld) context.getBean("helloworld");
         System.out.println(leaf.getMessage());
 
-        Cat one = (Cat) context.getBean("cat");
+        Cat one = (Cat) context.getBean("Cat");
         System.out.println(one.getMeow());
 
-        Cat two = (Cat) context.getBean("cat");
+        Cat two = (Cat) context.getBean("Cat");
         System.out.println(two.getMeow());
+
+        System.out.println(one.hashCode());
+        System.out.println(two.hashCode());
 
         if (tree.equals(leaf)) {
             System.out.println("true");
